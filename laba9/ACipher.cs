@@ -13,15 +13,15 @@ namespace laba9
             Console.WriteLine("Введите строку, которую требуется зашифровать");
             string str = Console.ReadLine();
             string newstr = "";
-            foreach (char bukva in str)
+            foreach (char letter in str)
             {
-                if (bukva.Equals(" ") || bukva.Equals(",") || bukva.Equals("."))
+                if (letter.Equals(" ") || letter.Equals(",") || letter.Equals("."))
                 {
-                    newstr += bukva;
+                    newstr += letter;
                 }
                 else
                 {
-                    char letter = char.ToLower(bukva);
+                    char letter = char.ToLower(letter);
                     char nextBukovka;
                     if (letter == 'z')
                     {
@@ -31,7 +31,7 @@ namespace laba9
                     {
                         nextBukovka = (char)(((int)letter) + 1);
                     }
-                    newstr += bukva;
+                    newstr += letter;
                 }
             }
         }
@@ -40,15 +40,15 @@ namespace laba9
             Console.WriteLine("Введите строку, которую требуется расшифровать");
             string str = Console.ReadLine();
             string newstr = "";
-            foreach (char bukva in str)
+            foreach (char letter in str)
             {
-                if (bukva.Equals(" ") || bukva.Equals(",") || bukva.Equals("."))
+                if (letter.Equals(" ") || letter.Equals(",") || letter.Equals("."))
                 {
-                    newstr += bukva;
+                    newstr += letter;
                 }
                 else
                 {
-                    char letter = char.ToLower(bukva);
+                    char letter = char.ToLower(letter);
                     char nextBukovka;
                     if (letter == 'a')
                     {
@@ -58,7 +58,7 @@ namespace laba9
                     {
                         nextBukovka = (char)(((int)letter) - 1);
                     }
-                    newstr += bukva;
+                    newstr += letter;
                 }
             }
         }
