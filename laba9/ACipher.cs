@@ -13,15 +13,15 @@ namespace laba9
             Console.WriteLine("Введите строку, которую требуется зашифровать");
             string str = Console.ReadLine();
             string newstr = "";
-            foreach (char letter in str)
+            foreach (char c in str)
             {
-                if (letter.Equals(" ") || letter.Equals(",") || letter.Equals("."))
+                if (c.Equals(" ") || c.Equals(",") || c.Equals("."))
                 {
-                    newstr += letter;
+                    newstr += c;
                 }
                 else
                 {
-                    char letter = char.ToLower(letter);
+                    char letter = char.ToLower(c);
                     char nextBukovka;
                     if (letter == 'z')
                     {
@@ -31,7 +31,7 @@ namespace laba9
                     {
                         nextBukovka = (char)(((int)letter) + 1);
                     }
-                    newstr += letter;
+                    newstr += c;
                 }
             }
         }
@@ -40,15 +40,15 @@ namespace laba9
             Console.WriteLine("Введите строку, которую требуется расшифровать");
             string str = Console.ReadLine();
             string newstr = "";
-            foreach (char letter in str)
+            foreach (char c in str)
             {
-                if (letter.Equals(" ") || letter.Equals(",") || letter.Equals("."))
+                if (c.Equals(" ") || c.Equals(",") || c.Equals("."))
                 {
-                    newstr += letter;
+                    newstr += c;
                 }
                 else
                 {
-                    char letter = char.ToLower(letter);
+                    char letter = char.ToLower(c);
                     char nextBukovka;
                     if (letter == 'a')
                     {
@@ -58,7 +58,7 @@ namespace laba9
                     {
                         nextBukovka = (char)(((int)letter) - 1);
                     }
-                    newstr += letter;
+                    newstr += c;
                 }
             }
         }
