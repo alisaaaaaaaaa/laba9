@@ -11,7 +11,7 @@ namespace Большие_гонки
         void IPlay.Play(Team team)
         {
             Console.WriteLine("Игра Перетягивание каната");
-            Console.WriteLine("что то делают перетягивают канат;)");
+            Console.WriteLine("что т делают перетягивают канат;)");
         }
     }
 }
