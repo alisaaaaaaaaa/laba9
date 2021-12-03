@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Большие_гонки
 {
-    interface IPlay
+    public interface IPlay
     {
-        void Beach();
-        void Mousetrap();
-        void Sea();
-        void Slidse();
+        void Play(Team team);
     }
 }

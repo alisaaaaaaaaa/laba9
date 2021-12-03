@@ -6,19 +6,16 @@ using System.Threading.Tasks;
 
 namespace Большие_гонки
 {
-    class Player
+    public class Player
     {
         public string Name;
         public int Number;
         public string Country;
-        public int Speed;
-        public Player(string Name, int Number, string Country,int Speed)
+        public Player(string Name, int Number, string Country)
         {
             this.Name = Name;
             this.Number = Number;
             this.Country = Country;
-            this.Speed = Speed;
         }
-        public int GetSpeed { get; }
     }
 }
